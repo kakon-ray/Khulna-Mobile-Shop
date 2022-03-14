@@ -121,7 +121,7 @@ const displayDetails = (detailsData) => {
 // Enter Button Click search value show
 const searchFild = document.getElementById("search-fild");
 searchFild.addEventListener("keypress", function (event) {
-  if (event.keyCode == 13) {
+  if (event.key == "Enter") {
     document.getElementById("button").click();
   }
 });
