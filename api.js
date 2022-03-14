@@ -117,3 +117,10 @@ const displayDetails = (detailsData) => {
   `;
   }
 };
+
+// Enter Button Click search value show
+window.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    document.getElementById("button").click();
+  }
+});
