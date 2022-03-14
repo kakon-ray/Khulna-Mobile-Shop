@@ -46,7 +46,7 @@ const displayUser = (data) => {
     <div class="card my-2">
   <div class="card-body mx-auto text-center">
      <img src="${mobile.image}"></img>
-    <h1>${mobile.brand}</h1>
+    <h1 class="title">${mobile.brand}</h1>
     <h3>${mobile.phone_name}</h3>
   
     <button type="button" onclick="detailsPhone('${mobile.slug}')" class="btn btn-success my-2">Details The Phone</button>
