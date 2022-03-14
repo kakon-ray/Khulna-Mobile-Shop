@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      #spenner {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="text-center mb-4" id="noresult">The Mobile Shop</h1>
+
+        <!-- this is search input value section -->
+
+        <div class="input-group mb-3 w-50 m-auto">
+          <input
+            type="text"
+            id="search-fild"
+            class="form-control"
+            placeholder="Search Phone"
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              onclick="searchMobile()"
+              class="input-group-text"
+              id="basic-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+          <div class="spinner-border" id="spenner" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <!-- This is Phone Details section -->
+        <div id="phone-details"></div>
+
+        <!-- this is all search phone display -->
+        <div class="row row-cols-1 row-cols-md-3" id="all-Search"></div>
+      </div>
+    </section>
+    <script src="api.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
